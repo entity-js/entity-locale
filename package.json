@@ -1,0 +1,35 @@
+{
+  "name": "entity-locale",
+  "description": "Provides the Locale middleware for Entity core.",
+  "keywords": [
+    "Entity", "Locale"
+  ],
+  "author": "Orgun109uk <orgun109uk@gmail.com>",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/entity-js/entity-locale.git"
+  },
+  "scripts": {
+    "test": "mocha --require ./index.js ./tests/**",
+    "eslint": "eslint index.js ./lib ./tests",
+    "jshint": "jshint index.js ./lib ./tests",
+    "docs": "jsdoc -c ./jsdoc.json",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha --require ./index.js ./tests/** ./tests/**/** -- -R spec"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "glob": "^5.0.14",
+    "nsloader": "^0.1.4"
+  },
+  "devDependencies": {
+    "entity-core": "git://github.com/entity-js/entity-core.git",
+    "eslint": "^1.2.1",
+    "istanbul": "^0.3.19",
+    "jaguarjs-jsdoc": "git+https://github.com/davidshimjs/jaguarjs-jsdoc.git",
+    "jsdoc": "git+https://github.com/jsdoc3/jsdoc.git",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "unit.js": "^2.0.0"
+  }
+}
